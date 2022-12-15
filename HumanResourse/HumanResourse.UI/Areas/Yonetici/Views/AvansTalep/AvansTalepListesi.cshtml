@@ -1,0 +1,100 @@
+﻿@using HumanResourse.Entitiy.Enums
+@{
+    ViewData["Title"] = "AvansTalepListesi";
+    Layout = "~/Areas/Yonetici/Views/Shared/_YoneticiLayout.cshtml";
+    int counter = 0;
+}
+
+<body>
+
+    <div class="pagetitle">
+        <h1 style="color: azure;">Avans İşlemleri</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li style="color: azure;" class="breadcrumb-item"><a href="/Yonetici/Yonetim/Index" >Ana sayfa /<a></li>
+                <li style="color: azure;" class="breadcrumb-item"><a href="/Yonetici/AvansTalep/AvansTalepListesi"> Avans İşlemleri<a></li>
+
+            </ol>
+        </nav>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Avans Talepleri</h5>
+
+            <br />
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th scope="col">Tür</th>
+                        <th scope="col">Talep Eden</th>
+                        <th scope="col">Durum</th>
+                        <th scope="col">Miktar</th>
+                        <th scope="col">Para Birimi</th>
+                        <th scope="col">Açıklama</th>
+                        <th scope="col">Talep Edilme Tarihi</th>
+                        <th scope="col">Onaylanma Tarihi</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @if (ViewBag.Sonuc is List<AdvancePayment>)
+                    {
+
+                        @foreach (var item in ViewBag.Sonuc)
+                        {
+                            counter++;
+                            <tr>
+                                <td>@counter</td>
+                                <td>@item.AppUsers.Name @item.AppUsers.Surname</td>
+                                <td>@item.advancePaymentType</td>
+                                	@if (item.Statu == Position.Beklemede)
+														{
+															<td><span class="badge bg-warning">@item.Statu.ToString()</span></td>
+														}
+														@if (item.Statu == Position.Rededildi)
+														{
+															<td><span class="badge bg-danger">@item.Statu.ToString()</span></td>
+														}
+														@if (item.Statu == Position.Onaylandi)
+														{
+															<td><span class="badge bg-success">@item.Statu.ToString()</span></td>
+														}
+                                <td>@item.ExpensesAmount</td>
+                                <td>@item.CurrencyUnit</td>
+                                <td>@item.Description</td>
+                                <td>@item.RequestDate.ToShortDateString()</td>
+                                <td>@item.ReponseDate</td>
+                                @if (item.Statu == Position.Beklemede)
+                                {
+                                    <td scope="col"><a asp-action="Onayla" asp-route-id="@item.AdvancePaymentID" class="btn btn-success">Onayla</a></td>
+                                    <td scope="col"><a asp-action="Reddet" asp-route-id="@item.AdvancePaymentID" class="btn btn-danger">Reddet</a></td>
+                                }
+
+
+
+                            </tr>
+                        }
+
+                    }
+                    else
+                    {
+                        <div class="bg-primary">
+                            <h5 style="color:azure;text-align:center;">@ViewBag.Sonuc</h5>
+                        </div>
+                    }
+                </tbody>
+
+            </table>
+
+
+        </div>
+    </div>
+</body>
+
+
+
+

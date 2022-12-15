@@ -1,0 +1,14 @@
+C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.Entitiy\bin\Debug\net6.0\HumanResourse.Entitiy.deps.json
+C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.Entitiy\bin\Debug\net6.0\HumanResourse.Entitiy.runtimeconfig.json
+C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.Entitiy\bin\Debug\net6.0\HumanResourse.Entitiy.dll
+C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.Entitiy\bin\Debug\net6.0\HumanResourse.Entitiy.pdb
+C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.Entitiy\obj\Debug\net6.0\HumanResourse.Entitiy.csproj.AssemblyReference.cache
+C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.Entitiy\obj\Debug\net6.0\HumanResourse.Entitiy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.Entitiy\obj\Debug\net6.0\HumanResourse.Entitiy.AssemblyInfoInputs.cache
+C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.Entitiy\obj\Debug\net6.0\HumanResourse.Entitiy.AssemblyInfo.cs
+C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.Entitiy\obj\Debug\net6.0\HumanResourse.Entitiy.csproj.CoreCompileInputs.cache
+C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.Entitiy\obj\Debug\net6.0\HumanResourse.Entitiy.dll
+C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.Entitiy\obj\Debug\net6.0\refint\HumanResourse.Entitiy.dll
+C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.Entitiy\obj\Debug\net6.0\HumanResourse.Entitiy.pdb
+C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.Entitiy\obj\Debug\net6.0\HumanResourse.Entitiy.genruntimeconfig.cache
+C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.Entitiy\obj\Debug\net6.0\ref\HumanResourse.Entitiy.dll

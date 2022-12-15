@@ -1,0 +1,264 @@
+﻿@model AppUser
+@{
+    ViewData["Title"] = "Profilim";
+    Layout = "~/Areas/Yonetici/Views/Shared/_YoneticiLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Components / Accordion - NiceAdmin Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/NiceAdmin/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/NiceAdmin/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/NiceAdmin/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/NiceAdmin/assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="~/NiceAdmin/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="~/NiceAdmin/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/NiceAdmin/assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/NiceAdmin/assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: NiceAdmin - v2.4.1
+    * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+
+
+    <div class="pagetitle">
+        <h1 style="color: azure;">Profilim</h1>
+        <nav>
+
+            <ol class="breadcrumb">
+                <li style="color: azure;" class="breadcrumb-item"><a href="/Yonetici/Yonetim/Index" >Ana Sayfa</a></li>
+                <li style="color: azure;" class="breadcrumb-item" >Profilim</li>
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+    
+    <section class="section profile">
+        <div class="row">
+            <div class="col-xl-4">
+
+                <div class="card">
+                    <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+
+                        <img src="@Model.ImageURL" alt="Profile" class="rounded-circle">
+                        <h2>@Model.Name.Substring(0,1).ToUpper()@Model.Name.Substring(1).ToLower() @Model.Surname.ToUpper()</h2>
+                        <h3>@Model.Job</h3>
+                        <div class="social-links mt-2">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xl-8">
+
+                <div class="card">
+                    <div class="card-body pt-3">
+                        <!-- Bordered Tabs -->
+                        <ul class="nav nav-tabs nav-tabs-bordered">
+
+                            <li class="nav-item">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Bilgilerim</button>
+                            </li>
+
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Güncelle</button>
+                            </li>
+                           
+
+
+                        </ul>
+                        <div class="tab-content pt-2">
+
+                            <div class="tab-pane fade show active profile-overview" id="profile-overview">
+
+                                @if (Model.SecondName!=null)
+                                {
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 label ">İkinci Adı</div>
+                                        <div class="col-lg-9 col-md-8">@Model.SecondName</div>
+                                    </div>
+                                }
+                                
+                                @if (Model.SecondSurname!=null )
+                                {
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 label ">İkinci Soyadı</div>
+                                        <div class="col-lg-9 col-md-8">@Model.SecondSurname</div>
+                                    </div>
+                                }
+                                
+
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">Mesleği</div>
+                                    <div class="col-lg-9 col-md-8">@Model.Job</div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">TC Kimlik</div>
+                                    <div class="col-lg-9 col-md-8">@Model.IdentityNumber</div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">Doğum Tarihi</div>
+                                    <div class="col-lg-9 col-md-8">@Model.BirthDate.ToShortDateString()</div>
+                                </div>
+
+                            
+                                 <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">Doğum Yeri</div>
+                                    <div class="col-lg-9 col-md-8">@Model.BirthPlace</div>
+                                </div>
+                                
+                                
+
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">İşe Giriş Tarihi</div>
+                                    <div class="col-lg-9 col-md-8">@Model.HiredDate.ToShortDateString()</div>
+                                </div>
+
+                                @if (Model.FiredDate != null)
+                                {
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">İşten Çıkış Tarihi</div>
+                                    <div class="col-lg-9 col-md-8">@Model.FiredDate.Value</div>
+                                </div>
+                                }
+
+                             
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">Departman</div>
+                                    <div class="col-lg-9 col-md-8">@Model.Departman</div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">Telefon</div>
+                                    <div class="col-lg-9 col-md-8">@Model.PhoneNumber</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">Mail</div>
+                                    <div class="col-lg-9 col-md-8">@Model.Email</div>
+                                </div>
+                                @if (Model.Address != null)
+                                {
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 label">Adres</div>
+                                        <div class="col-lg-9 col-md-8">@Model.Address</div>
+                                    </div>
+                                }
+
+
+
+                            </div>
+
+                            <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+
+                                <!-- Profile Edit Form -->
+
+                                <form method="post" enctype="multipart/form-data" asp-action="PersonelGuncelle" asp-area="Yonetici" asp-controller="Yonetim">
+
+
+                                    <div class="row mb-3">
+                                        <label class="col-sm-3 col-form-label">Telefon</label>
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" asp-for="PhoneNumber">
+                                           	<span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="row mb-3">
+                                        <label class="col-sm-3 col-form-label">Fotoğraf</label>
+                                        <div class="col-sm-12">
+                                            <input type="file" class="form-control" asp-for="ImageURL">
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="row mb-3">
+                                        <label for="inputPassword" class="col-sm-3 col-form-label">Adres</label>
+                                        <div class="col-sm-12">
+                                            <textarea class="form-control" style="height: 100px; margin-bottom:20px" asp-for="Address"></textarea>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-sm-12" style="display:flex; justify-content:flex-end">
+                                            <button type="submit" class="btn btn-primary rounded-pill">Bilgilerimi Kaydet</button>
+                                        </div>
+                                    </div>
+
+                                </form><!-- End General Form Elements -->
+                            </div>
+
+                           
+                       
+
+                        </div><!-- End Bordered Tabs -->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="~/NiceAdmin/assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="~/NiceAdmin/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/NiceAdmin/assets/vendor/chart.js/chart.min.js"></script>
+    <script src="~/NiceAdmin/assets/vendor/echarts/echarts.min.js"></script>
+    <script src="~/NiceAdmin/assets/vendor/quill/quill.min.js"></script>
+    <script src="~/NiceAdmin/assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="~/NiceAdmin/assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="~/NiceAdmin/assets/vendor/php-email-form/validate.js"></script>
+
+
+    <!-- Vendor JS Files -->
+    <script src="~/NiceAdmin/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+    <!-- Template Main JS File -->
+    <script src="~/NiceAdmin/assets/js/main.js"></script>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,88 @@
+﻿
+@using HumanResourse.UI.Areas.Islemler.Models
+@model  AppUser
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Kullanici/Views/Shared/_PersonelLayout.cshtml";
+    int
+    counter = 0;
+}
+@*@if (@ViewBag.AvansList == null)
+{
+    <div class="bg-primary text-white text-center lead">
+        Avans Talep Listesi Boş
+    </div>
+
+        }*@
+           
+
+      <body>
+    <div class="pagetitle">
+        <h1 style="color: azure;">İzin İşlemleri</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a style="color: azure;" href="/Kullanici/Personel/Anasayfa/" >Ana sayfa /<a></li>
+                <li class="breadcrumb-item"><a style="color: azure;" href="/Islemler/Avans/Index" >Avanslar<a></li>
+
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Taleplerim</h5>
+            <a class="btn btn-primary" asp-action="AdvanceRequest" asp-controller="Avans">Talep Oluştur</a>
+            <br />
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th scope="col">Tür</th>
+                        <th scope="col">Durum</th>
+                        <th scope="col">Miktar</th>
+                        <th scope="col">Birim</th>
+                        <th scope="col">Açıklama</th>
+                        <th scope="col">Talep Edilme Tarihi</th>
+                        <th scope="col">Sonuçlanma Tarihi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (@ViewBag.mesaj == 0)
+                    {
+                        <div class="bg-primary text-white text-center lead" style="margin-top:10px">
+                            Avans Talep Listesi Boş
+                        </div>
+
+                    }
+
+                    @foreach (var item in ViewBag.AvansList)
+                    {
+                        counter++;
+                        <tr>
+                            <td>@counter</td>
+                            <td>@item.advancePaymentType.ToString()</td>
+                            <td>@item.Statu.ToString()</td>
+                            <td>@item.ExpensesAmount</td>
+                            <td>@item.CurrencyUnit</td>
+                            <td>@item.Description</td>
+                            <td>@item.RequestDate</td>
+                            <td>@item.ReponseDate</td>
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+      </body>
+
+
+
+
+
+
+
+       

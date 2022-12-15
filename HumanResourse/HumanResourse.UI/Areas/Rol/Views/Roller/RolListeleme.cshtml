@@ -1,0 +1,73 @@
+﻿@model List<AppRole>
+@{
+    ViewData["Title"] = "RolListeleme";
+    Layout = "~/Areas/Kullanici/Views/Shared/_PersonelLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+
+    <div class="pagetitle">
+        <h1 style="color: azure;">General Tables</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li style="color: azure;" class="breadcrumb-item"><a href="Rol/Roller/RolListeleme">Roller</a></li>
+
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+
+
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Roller</h5>
+
+                    <!-- Table with stripped rows -->
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Rol Adı</th>
+                                <th scope="col">Sil</th>
+                                <th scope="col">Güncelle</th>
+                            </tr>
+                        </thead>
+
+                        @foreach (var item in Model)
+                        {
+                            <tbody>
+                                <tr>
+                                    <th scope="row">@item.Id</th>
+                                    <td>@item.Name</td>
+                                    <td><a href="/Rol/Roller/RolSil/@item.Id" class="btn btn-danger">Sil</a></td>
+                                    <td><a href="/Rol/Roller/RolGuncelle/@item.Id" class="btn btn-success">Güncelle</a></td>
+
+                                </tr>
+                            </tbody>
+                        }
+
+
+                    </table>
+                    <!-- End Table with stripped rows -->
+                    <a href="/Rol/Roller/RolEkle" class="btn btn-info">Rol Ekle</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
+
+

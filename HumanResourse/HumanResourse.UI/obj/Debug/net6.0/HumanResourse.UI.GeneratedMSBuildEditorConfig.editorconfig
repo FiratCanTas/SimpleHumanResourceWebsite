@@ -1,0 +1,201 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HumanResourse.UI
+build_property.RootNamespace = HumanResourse.UI
+build_property.ProjectDir = C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.UI\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\F-rat\Desktop\HMRProject\HumanResourse\HumanResourse.UI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Islemler/Views/Avans/AdvanceRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXNsZW1sZXJcVmlld3NcQXZhbnNcQWR2YW5jZVJlcXVlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Islemler/Views/Avans/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXNsZW1sZXJcVmlld3NcQXZhbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Islemler/Views/Avans/Index3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXNsZW1sZXJcVmlld3NcQXZhbnNcSW5kZXgzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Islemler/Views/Harcama/HarcamaSayfasi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXNsZW1sZXJcVmlld3NcSGFyY2FtYVxIYXJjYW1hU2F5ZmFzaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Islemler/Views/Harcama/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXNsZW1sZXJcVmlld3NcSGFyY2FtYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Islemler/Views/Izin/IzinEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXNsZW1sZXJcVmlld3NcSXppblxJemluRWtsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Islemler/Views/Izin/IzinListele.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXNsZW1sZXJcVmlld3NcSXppblxJemluTGlzdGVsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Islemler/Views/Izin/IzinListeleEski.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXNsZW1sZXJcVmlld3NcSXppblxJemluTGlzdGVsZUVza2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Islemler/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXNsZW1sZXJcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Islemler/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXNsZW1sZXJcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Kullanici/Views/IdentityKullanici/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXElkZW50aXR5S3VsbGFuaWNpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Kullanici/Views/IdentityKullanici/KullaniciEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXElkZW50aXR5S3VsbGFuaWNpXEt1bGxhbmljaUVrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Kullanici/Views/IdentityKullanici/KullanicilarListesi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXElkZW50aXR5S3VsbGFuaWNpXEt1bGxhbmljaWxhckxpc3Rlc2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Kullanici/Views/Personel/Anasayfa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXFBlcnNvbmVsXEFuYXNheWZhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Kullanici/Views/Personel/PersonelGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXFBlcnNvbmVsXFBlcnNvbmVsR3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Kullanici/Views/Personel/Profilim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXFBlcnNvbmVsXFByb2ZpbGltLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Kullanici/Views/Shared/_PersonelLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXFNoYXJlZFxfUGVyc29uZWxMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Kullanici/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Kullanici/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Rol/Views/Roller/RolEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUm9sXFZpZXdzXFJvbGxlclxSb2xFa2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Rol/Views/Roller/RolListeleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUm9sXFZpZXdzXFJvbGxlclxSb2xMaXN0ZWxlbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Rol/Views/Shared/_PersonelLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUm9sXFZpZXdzXFNoYXJlZFxfUGVyc29uZWxMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Rol/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUm9sXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Rol/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUm9sXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Yonetici/Views/AvansTalep/AvansTalepListesi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpY2lcVmlld3NcQXZhbnNUYWxlcFxBdmFuc1RhbGVwTGlzdGVzaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Yonetici/Views/HarcamaTalep/HarcamaTalepListesi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpY2lcVmlld3NcSGFyY2FtYVRhbGVwXEhhcmNhbWFUYWxlcExpc3Rlc2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Yonetici/Views/IzinTalep/IzinOnayla.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpY2lcVmlld3NcSXppblRhbGVwXEl6aW5PbmF5bGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Yonetici/Views/IzinTalep/IzinTalepListesi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpY2lcVmlld3NcSXppblRhbGVwXEl6aW5UYWxlcExpc3Rlc2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Yonetici/Views/Shared/_YoneticiLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpY2lcVmlld3NcU2hhcmVkXF9Zb25ldGljaUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Yonetici/Views/Yonetim/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpY2lcVmlld3NcWW9uZXRpbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Yonetici/Views/Yonetim/PersonelGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpY2lcVmlld3NcWW9uZXRpbVxQZXJzb25lbEd1bmNlbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Yonetici/Views/Yonetim/Profilim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpY2lcVmlld3NcWW9uZXRpbVxQcm9maWxpbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Yonetici/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpY2lcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Areas/Yonetici/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpY2lcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Views/Personel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Views/Personel/PersonelGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcUGVyc29uZWxHdW5jZWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Views/Personel/Profil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcUHJvZmlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Views/Shared/_PersonelLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QZXJzb25lbExheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/F-rat/Desktop/HMRProject/HumanResourse/HumanResourse.UI/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-dcmo0pg1zc

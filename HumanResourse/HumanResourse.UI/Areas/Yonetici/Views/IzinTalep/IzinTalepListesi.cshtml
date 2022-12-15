@@ -1,0 +1,117 @@
+﻿@using HumanResourse.Entitiy.Enums
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Yonetici/Views/Shared/_YoneticiLayout.cshtml";
+    int
+    counter = 0;
+}
+@*@if (@ViewBag.AvansList == null)
+{
+    <div class="bg-primary text-white text-center lead">
+        Avans Talep Listesi Boş
+    </div>
+
+        }*@
+
+
+
+<body>
+
+    <div class="pagetitle">
+        <h1 style="color: azure;">İzin İşlemleri</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li style="color: azure;" class="breadcrumb-item"><a href="/Yonetici/Yonetim/Index" >Ana sayfa / <a></li>
+                <li style="color: azure;" class="breadcrumb-item"><a href="/Yonetici/IzinTalep/IzinTalepListesi" >İzin İşlemleri<a></li>
+           
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">İzin Taleplerim</h5>
+            
+            <br />
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th scope="col">Tür</th>
+                        <th scope="col">Talep Eden</th>
+                        <th scope="col">Durum</th>
+                        <th scope="col">Kalan İzin Günü</th>
+                        <th scope="col">Başlangıç Tarihi</th>
+                        <th scope="col">Bitiş Tarihi</th>                   
+                        <th scope="col">Talep Tarihi</th>
+                        <th scope="col">Onay Tarihi</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                
+                    @if (ViewBag.izinTalep is List<Permit>)
+                    {
+                        @foreach (var item in ViewBag.izinTalep)
+                        {
+                            counter++;
+                            <tr>
+                                <td>@counter</td>
+                                <td>@item.permitType</td>
+                                <td>@item.AppUsers.Name @item.AppUsers.Surname</td>
+                                @if (item.Statu == Position.Beklemede)
+                                {
+                                    <td><span class="badge bg-warning">@item.Statu.ToString()</span></td>
+                                }
+                                @if (item.Statu == Position.Rededildi)
+                                {
+                                    <td><span class="badge bg-danger">@item.Statu.ToString()</span></td>
+                                }
+                                @if (item.Statu == Position.Onaylandi)
+                                {
+                                    <td><span class="badge bg-success">@item.Statu.ToString()</span></td>
+                                }
+
+                                <td>@item.PermitDay</td>
+                                <td>@item.StartDate.ToShortDateString()</td>
+                                <td>@item.EndDate.ToShortDateString()</td>                                
+                                <td>@item.RequestDate.ToShortDateString()</td>
+                                <td>@item.ReponseDate</td>
+                                @if (item.Statu == Position.Beklemede)
+                                {
+                                    <td scope="col"><a href="/Yonetici/IzinTalep/IzinOnayla/@item.PermitID" class="btn btn-success">Onayla</a></td>
+                                    <td scope="col"><a href="/Yonetici/IzinTalep/IzinReddet/@item.PermitID" class="btn btn-danger">Reddet</a></td>
+                                }
+                                
+
+
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <div class="bg-primary">
+                            <h5 style="color:azure;text-align:center;">@ViewBag.Sonuc</h5>
+                        </div>
+                    }
+
+                  
+
+
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+

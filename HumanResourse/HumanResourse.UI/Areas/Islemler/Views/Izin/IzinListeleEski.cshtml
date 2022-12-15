@@ -1,0 +1,91 @@
+﻿@using HumanResourse.UI.Areas.Islemler.Models
+@model AppUser
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Kullanici/Views/Shared/_PersonelLayout.cshtml";
+    int
+    counter = 0;
+}
+@*@if (@ViewBag.AvansList == null)
+{
+    <div class="bg-primary text-white text-center lead">
+        Avans Talep Listesi Boş
+    </div>
+
+        }*@
+
+
+
+<body>
+
+    <div class="pagetitle">
+        <h1>İzin İşlemleri</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/Kullanici/Personel/Anasayfa/" style="color:dimgray">Ana sayfa / <a></li>
+                <li class="breadcrumb-item"><a href="/Islemler/Izin/IzinListele" style="color:dimgray">İzinler<a></li>
+           
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">İzin Taleplerim</h5>
+            <a class="btn btn-primary" asp-action="IzinEkle" asp-controller="Izin">Talep Oluştur</a>
+            <br />
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th scope="col">Tür</th>
+                        <th scope="col">Durum</th>
+                        <th scope="col">Başlangıç Tarihi</th>
+                        <th scope="col">Bitiş Tarihi</th>
+                        <th scope="col">Kalan İzin Günü</th>
+                        <th scope="col">Talep Edilme Tarihi</th>
+                        <th scope="col">Sonuçlanma Tarihi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (@ViewBag.mesaj == 0)
+                    {
+                        <div class="bg-primary text-white text-center lead" style="margin-top:10px">
+                            İzin Talep Listesi Boş
+                        </div>
+
+                    }
+
+
+
+                    @foreach (var item in ViewBag.izinList)
+                    {
+                        counter++;
+                        <tr>
+                            <td>@counter</td>
+                            <td>@item.permitType</td>
+                            <td>@item.Statu</td>
+                            <td>@item.StartDate</td>
+                            <td>@item.EndDate</td>
+                            <td>@item.PermitDay</td>
+                            <td>@item.RequestDate</td>
+                            <td>@item.ReponseDate</td>
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+

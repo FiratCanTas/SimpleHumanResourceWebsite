@@ -1,0 +1,109 @@
+﻿@using HumanResourse.Entitiy.Enums
+
+@{
+    ViewData["Title"] = "HarcamaTalepListesi";
+    Layout = "~/Areas/Yonetici/Views/Shared/_YoneticiLayout.cshtml";
+    int counter = 0;
+}
+
+<body>
+
+    <div class="pagetitle">
+        <h1 style="color: azure;">Harcama İşlemleri</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li style="color: azure;" class="breadcrumb-item"><a href="/Yonetici/Yonetim/Index" >Ana sayfa / <a></li>
+                <li style="color: azure;" class="breadcrumb-item"><a href="/Yonetici/HarcamaTalep/HarcamaTalepListesi" >Harcama İşlemleri<a></li>
+
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Harcama Talepleri</h5>
+
+            <br />
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Talep Eden</th>
+                        <th scope="col">Talep Türü</th>
+                        <th scope="col">Durum</th>                      
+                        <th scope="col">Tutar</th>
+                        <th scope="col">Para Birimi</th>
+                        <th scope="col">Döküman</th>
+                        <th scope="col">Talep Tarihi</th>     
+                        <th scope="col">Onay Tarihi</th>     
+                      
+                        
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @*
+                    @if (@ViewBag.mesaj == 0)
+                    {
+                    <div class="bg-primary text-white text-center lead" style="margin-top:10px">
+                    İzin Talep Listesi Boş
+                    </div>
+
+                    }*@
+
+                    @if (ViewBag.HarcamaTalep is List<Expenses>)
+                    {
+                        @foreach (var item in ViewBag.HarcamaTalep)
+                        {
+                            counter++;
+                            <tr>
+                                <td>@counter</td>
+                                <td>@item.AppUsers.Name @item.AppUsers.Surname</td>
+                                <td>@item.ExpensesType.ToString()</td>
+                                @if (item.Statu == Position.Beklemede)
+                                {
+                                    <td><span class="badge bg-warning">@item.Statu.ToString()</span></td>
+                                }
+                                @if (item.Statu == Position.Rededildi)
+                                {
+                                    <td><span class="badge bg-danger">@item.Statu.ToString()</span></td>
+                                }
+                                @if (item.Statu == Position.Onaylandi)
+                                {
+                                    <td><span class="badge bg-success">@item.Statu.ToString()</span></td>
+                                }
+
+                                <td>@item.ExpensesAmount</td>
+                                <td>@item.CurrencyUnit</td>
+                                <td><a href="@item.Documentation">Doküman</a></td>
+                                <td>@item.RequestDate.ToShortDateString()</td>
+                                <td>@item.ReponseDate</td>
+
+                                @if (item.Statu == Position.Beklemede)
+                                {
+                                    <td scope="col"><a href="/Yonetici/HarcamaTalep/IzinOnayla/@item.ExpensesID" class="btn btn-success">Onayla</a></td>
+                                    <td scope="col"><a href="/Yonetici/HarcamaTalep/IzinRed/@item.ExpensesID" class="btn btn-danger">Reddet</a></td>
+                                }
+
+
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <div class="bg-primary">
+                            <h5 style="color:azure;text-align:center;">@ViewBag.HarcamaTalep</h5>
+                        </div>
+                    }
+
+          
+
+
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+</body>
+

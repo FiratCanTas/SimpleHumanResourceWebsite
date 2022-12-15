@@ -1,0 +1,96 @@
+﻿@model PermitCreateModel
+@using HumanResourse.Entitiy.Enums
+@using HumanResourse.UI.Areas.Islemler.Models
+@{
+    ViewData["Title"] = "IzinEkle";
+    Layout = "~/Areas/Kullanici/Views/Shared/_PersonelLayout.cshtml";
+}
+@{
+    if (TempData["mesaj"] != null)
+    {
+    <div class="bg-primary text-white text-center lead">
+                    @TempData["mesaj"]
+    </div>
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+
+
+        <div class="pagetitle">
+        <h1 style="color: azure;">İzin İşlemleri</h1>
+            <nav>
+                <ol class="breadcrumb">
+                <li style="color: azure;" class="breadcrumb-item"><a href="/Kullanici/Personel/Anasayfa/" >Ana sayfa / <a></li>
+                <li style="color: azure;" class="breadcrumb-item"><a href="/Islemler/Izin/IzinListele"> İzinler / <a></li>
+                    <li style="color: azure;" class="breadcrumb-item active"> İzin Ekle</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+        <section class="section">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">İzin Ekleme Formu</h5>
+
+                            <!-- General Form Elements -->
+                            <form method="post" asp-action="IzinEkle">
+                                <div class="row mb-3">
+                                    <label class="col-sm-3 col-form-label">İzin Türü</label>
+                                    <div class="col-sm-12">
+                                        @Html.DropDownListFor(x=>x.permitType,Html.GetEnumSelectList<PermitTypee>(), new {@class="form-control"})
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputDate" class="col-sm-2 col-form-label">Başlangıç Tarihi</label>
+                                    <div class="col-sm-12">
+                                        <input type="date" class="form-control" asp-for="StartDate">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputDate" class="col-sm-2 col-form-label">Bitiş Tarihi</label>
+                                    <div class="col-sm-12">
+                                        <input type="date" class="form-control" asp-for="EndDate">
+                                    </div>
+                                    <div class="row mb-3">
+                                        
+                                        <div class="col-sm-12" style="display:flex; justify-content:flex-end; margin-top:25px;">
+                                            <button type="submit" class="btn btn-primary rounded-pill">Kaydet</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form><!-- End General Form Elements -->
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    
+    <!-- Vendor JS Files -->
+    <script src="~/NiceAdmin/assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="~/NiceAdmin/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/NiceAdmin/assets/vendor/chart.js/chart.min.js"></script>
+    <script src="~/NiceAdmin/assets/vendor/echarts/echarts.min.js"></script>
+    <script src="~/NiceAdmin/assets/vendor/quill/quill.min.js"></script>
+    <script src="~/NiceAdmin/assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="~/NiceAdmin/assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="~/NiceAdmin/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/NiceAdmin/assets/js/main.js"></script>
+
+</body>
+
+</html>
