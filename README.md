@@ -2,7 +2,7 @@
 Bu projede aşağıda belirttiğim teknikler ve teknolojiler kulanılmıştır;
 Identity,
 Inversion Of Control, 
-Repository Dizayn Patter,
+Repository Design Patter,
 Code First,
 NTier Arch,
 MVC
@@ -11,4 +11,4 @@ Azure Cloud
 Azure DevOps
 Agile-Scrum
 EF-Core
-Bootstrap5
+Bootstrap 5
